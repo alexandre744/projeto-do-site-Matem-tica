@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Portfólio de Alexandre</title>
+    <style>
+        .game-dev-bg {
+            background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+            color: white;
+        }
+        .game-dev-text {
+            color: #6e48aa;
+        }
+        .avatar-img {
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .avatar-img:hover {
+            transform: scale(1.05);
+        }
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .skill-badge {
+            transition: all 0.3s;
+        }
+        .skill-badge:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header com avatar -->
+    <header class="container text-center py-5 game-dev-bg">
+        <img src="img/Captura de tela 2025-04-13 124508.png" alt="Avatar do Alexandre" class="rounded-circle avatar-img mb-4" width="200" height="200">
+        <h1 class="display-4 fw-bold">Alexandre</h1>
+        <p class="lead fs-3">Desenvolvedor de Jogos | Estudante de Informática</p>
+        
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8">
+                <p class="fs-5">Sou estudante de informática com paixão por desenvolvimento de jogos. Recentemente criei meu primeiro jogo completo - um Jogo da Velha com inteligência artificial básica. Atualmente aprimoro minhas habilidades através de cursos na Alura e projetos pessoais.</p>
+            </div>
+        </div>
+        
+        <div class="mt-4 d-flex flex-wrap justify-content-center gap-2">
+            <span class="badge bg-light text-dark fs-6 skill-badge">JavaScript</span>
+            <span class="badge bg-light text-dark fs-6 skill-badge">HTML5</span>
+            <span class="badge bg-light text-dark fs-6 skill-badge">CSS3</span>
+            <span class="badge bg-light text-dark fs-6 skill-badge">Game Design</span>
+            <span class="badge bg-light text-dark fs-6 skill-badge">Lógica de Programação</span>
+        </div>
+    </header>
+
+    <!-- Seção de Programação - 1 imagem -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/Captura de tela 2025-04-14 112659.png" class="img-fluid rounded shadow-lg" alt="Programação">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h2 class="game-dev-text fw-bold mb-4">Minha Jornada na Programação</h2>
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-code-square fs-3"></i>
+                        </div>
+                        <div>
+                            <h5>Estudante de Informática</h5>
+                            <p>Atualmente cursando informática com foco em desenvolvimento de software e criação de jogos.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-lightbulb fs-3"></i>
+                        </div>
+                        <div>
+                            <h5>Projetos Pessoais</h5>
+                            <p>Desenvolvo pequenos jogos e aplicações para praticar e aprimorar minhas habilidades.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-book fs-3"></i>
+                        </div>
+                        <div>
+                            <h5>Aprendizado Contínuo</h5>
+                            <p>Complemento meus estudos com cursos online e muita prática diária.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção do Jogo da Velha - 1 imagem -->
+    <section class="py-5 game-dev-bg text-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Meu Jogo da Velha</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <img src="img/Captura de tela 2025-04-13 133156.png" class="img-fluid rounded shadow-lg" alt="Jogo da Velha">
+                </div>
+                <div class="col-md-6 order-md-1 mt-4 mt-md-0">
+                    <h3 class="fw-bold">Primeiro Projeto Completo</h3>
+                    <p class="fs-5">Desenvolvi um Jogo da Velha funcional com:</p>
+                    <ul class="fs-5">
+                        <li class="mb-2">Interface intuitiva e responsiva</li>
+                        <li class="mb-2">Lógica de jogo completa</li>
+                        <li class="mb-2">Sistema de turnos</li>
+                        <li class="mb-2">Detecção de vitória/empate</li>
+                        <li>Modo single-player contra IA básica</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="https://editor.p5js.org/alexandre.tramujas/sketches/duIwFIaaA" target="_blank" class="btn btn-light btn-lg me-3">Jogar Online</a>
+                        <a href="https://editor.p5js.org/alexandre.tramujas/sketches/duIwFIaaA" target="_blank" class="btn btn-outline-light btn-lg">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Alura - 1 imagem -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/Captura de tela 2025-04-13 124215.png" class="img-fluid rounded shadow-lg" alt="Plataforma Alura">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h2 class="game-dev-text fw-bold mb-4">Aprimorando Habilidades na Alura</h2>
+                    <p class="fs-5">Utilizo a plataforma Alura para complementar meus estudos com cursos de:</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card card-hover h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-controller me-2"></i>Desenvolvimento de Jogos</h5>
+                                    <p class="card-text">Lógica de games, engines e design de jogos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card card-hover h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-code-slash me-2"></i>Programação Web</h5>
+                                    <p class="card-text">JavaScript moderno e frameworks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-hover h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-palette me-2"></i>Design para Games</h5>
+                                    <p class="card-text">UI/UX e assets visuais.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-hover h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-robot me-2"></i>Lógica de Programação</h5>
+                                    <p class="card-text">Algoritmos e estruturas de dados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3 class="fw-bold mb-4">Entre em Contato</h3>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope-fill fs-4 me-3"></i>
+                            <span>alexandre@email.com</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-github fs-4 me-3"></i>
+                            <a href="#" class="text-white">github.com/alexandre-dev</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-linkedin fs-4 me-3"></i>
+                            <a href="#" class="text-white">linkedin.com/in/alexandre-dev</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-4">Próximos Objetivos</h3>
+                    <ul class="fs-5">
+                        <li class="mb-2">Desenvolver um jogo 2D completo</li>
+                        <li class="mb-2">Aprender Unity ou Godot</li>
+                        <li>Participar de uma game jam</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="text-center">
+                <p class="mb-0">© 2024 Alexandre - Desenvolvedor de Jogos</p>
+                <p>Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
